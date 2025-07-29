@@ -1,0 +1,6 @@
+pets = [('Buddy', 'John', 'Doe', 30), ('Max', 'John', 'Doe', 30)]
+result = {}
+
+for dog, name, surname, age in pets:
+    owner = (name, surname, age)
+    result.setdefault(owner, []).append(dog)
